@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    
+    <link rel='stylesheet' href='./css/styles.css'>
+</head>
+<body>
+    <div id='page-container'>
+
+        <header>
+            <div id='header-container'>
+                <div class='menu-icon'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class='logo'>
+
+                    
+                    <img src='./img/place_logo.png' alt='placeholder' />
+                </div>
+
+                <div class='menu-items'>
+                    <ul class='nav-items'>
+                        <li>Collection</li>
+                        <li>Products</li>
+                        <li>Donate</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+
+                <div class='social-links'>
+                    <i class="fas fa-search fa-lg"></i>
+                    <i class="fas fa-user fa-lg"></i>
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </div>
+
+
+            </div>
+        </header>
+
+        <section class='landing single-item'>
+            <div class='image-contain'><img class='slider-img' src="./img/landing_place.jpg" alt="image"></div>
+            <div class='image-contain'><img class='slider-img' src="./img/landing_place2.jpg" alt="image"></div>
+            <div class='image-contain'><img class='slider-img' src="./img/landing_place3.jpg" alt="image"></div>
+        </section>
+
+        
+        <div class='new-product-container'>
+            <h1>New Products</h1>
+            <hr>
+            <section class='autoplay'>
+                <div class='new-product' onclick=popupFunc(event)>
+                    <img class='new-product-img' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                    <h3>Beetle T-shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                    
+                </div>
+                <div class='new-product'>
+                    <img class='new-product-img' src="./img/tshirt_cats.jpg" alt="image">
+                    <h3>Cats T-Shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                </div>
+                <div class='new-product'>
+                    <img class='new-product-img' src="./img/tshirt_human.png" alt="image">
+                    <h3>Human's T-Shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                </div>
+                <div class='new-product'>
+                    <img class='new-product-img' src="./img/tshirt_beetle.png" alt="image">
+                    <h3>Beetle T-Shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                </div>
+                <div class='new-product'>
+                    <img class='new-product-img' src="./img/tshirt_cats.jpg" alt="image">
+                    <h3>Cats T-Shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                </div>
+                <div class='new-product'>
+                    <img class='new-product-img' src="./img/tshirt_human.png" alt="image">
+                    <h3>Human's T-Shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class='product-popup-container' id='product-popup'>
+            <div class='popup-product-img-container'>
+                <img class='popup-product-img' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+            </div>
+            <div class='autoplay popup-img-carousel'>
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+            </div>
+            <div class='popup-text-container'>
+                <h1>Beetle Shirt</h1>
+                <h6>Dau Chau original art</h6>
+                <h2>300,000</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at porta orci, non tristique dolor. Vivamus maximus tincid</p>
+            </div>
+            <div class='popup-color-container'>
+                NEED TO HAVE A CONTAINER FOR H3 and COLOR SELECTOR -> USE GRID
+                <h3>Select a color:</h3>
+                <div class='popup-color-select' style='background-color:var(--light-pink);'></div>
+                <div class='popup-color-select' style='background-color:black;'></div>
+                <div class='popup-color-select' style='background-color:orange;'></div>
+                <div class='popup-color-select' style='background-color:var(--med-pink);'></div>
+            </div>
+            <div class='popup-shopping-container'>
+
+            </div>
+
+        </div>
+
+        <div class='mission-statement-container'>
+            <h1>Our Mission</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at porta orci, non tristique dolor. Vivamus maximus tincidunt dictum. Vestibulum tincidunt sollicitudin tempus. Integer vel augue vitae erat fringilla blandit. Nulla et odio sed elit ornare auctor. Praesent dolor lacus, pellentesque vitae rhoncus et, blandit quis magna. Ut sit amet urna a nisl feugiat faucibus a non enim. Morbi laoreet, nisi sit amet posuere auctor, ex massa aliquam tellus, ac ultricies tellus lacus sit amet ante. Nunc pretium ipsum ut leo efficitur, vel fringilla libero gravida. Phasellus elementum tellus ac lacus varius luctus. Nullam eu aliquam odio, id dignissim ante. Maecenas aliquet varius bibendum. Maecenas sollicitudin velit sit amet elit pretium dictum.
+            </p>
+        </div>
+
+
+        <footer>
+            <h1>FOOTER</h1>
+        </footer>
+
+    </div>
+    <script type='text/javascript' src='./js/index.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type='text/javascript'>
+        $('.single-item').slick({
+            prevArrow: "<span class='slick-prev'><i class='fa fa-angle-left' aria-hidden='true'></i></span>",
+            nextArrow: "<span class='slick-next'><i class='fa fa-angle-right' aria-hidden='true'></i></span>",
+            appendArrows: $('.landing')
+        });
+
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false
+        });
+	
+    </script>
+</body>
+</html>
+
+
