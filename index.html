@@ -109,16 +109,18 @@
             </section>
         </div>
 
+        <!-- POPUP -->
+
         <div class='product-popup-container' id='product-popup'>
             <div class='popup-product-img-container'>
                 <img class='popup-product-img' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
             </div>
-            <div class='autoplay popup-img-carousel'>
-                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
-                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
-                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
-                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
-                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+            <div class='autoplay-popup popup-img-carousel'>
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" alt="image">
+                <img class='popup-product-img-thumb' src="./img/tshirt_beetle.png" alt="image">
             </div>
             <div class='popup-text-container'>
                 <h1>Beetle Shirt</h1>
@@ -127,18 +129,87 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at porta orci, non tristique dolor. Vivamus maximus tincid</p>
             </div>
             <div class='popup-color-container'>
-                NEED TO HAVE A CONTAINER FOR H3 and COLOR SELECTOR -> USE GRID
-                <h3>Select a color:</h3>
-                <div class='popup-color-select' style='background-color:var(--light-pink);'></div>
-                <div class='popup-color-select' style='background-color:black;'></div>
-                <div class='popup-color-select' style='background-color:orange;'></div>
-                <div class='popup-color-select' style='background-color:var(--med-pink);'></div>
+                <!-- NEED TO HAVE A CONTAINER FOR H3 and COLOR SELECTOR -> USE GRID -->
+                <div class='popup-color-select-container'>
+                    <!-- <h3>Select a color:</h3> -->
+                    <div class='popup-color-select' style='background-color:var(--light-pink);'></div>
+                    <div class='popup-color-select' style='background-color:black;'></div>
+                    <div class='popup-color-select' style='background-color:orange;'></div>
+                    <div class='popup-color-select' style='background-color:var(--med-pink);'></div>
+                </div>
+                <div class='popup-size-select-container'>
+                    <!-- <h3>Select a size:</h3> -->
+                    <input type="radio" id="large" name="shirt_size" value="LG">
+                    <label for="large">Large</label><br>
+                    <input type="radio" id="medium" name="shirt_size" value="MD">
+                    <label for="medium">Medium</label><br>
+                    <input type="radio" id="small" name="shirt_size" value="SM">
+                    <label for="small">Small</label>
+                </div>
+
             </div>
             <div class='popup-shopping-container'>
+                <!-- <label for="quantity">Quantity:</label> -->
+                <input type="number" id="quantity" name="quantity" placeholder='1'>
+
+                <button type="button" class='add-to-cart-btn'>Add to Cart</button>
 
             </div>
 
         </div>
+
+        <!-- END OF POPUP -->
+
+        <!-- COLLECTIONS -->
+
+        <h1>Artist's Collections</h1>
+        <hr>
+        <h2>Miu Seu Collection</h2>
+        <section class='art-collection'>
+            <div class='collection-preview'>
+                <img class='collection-preview-img' src='./img/crop_pig_art.png' alt='image' />
+            </div>
+            <div class='collection-products'>
+                <div class='new-product' onclick=popupFunc(event)>
+                    <img class='new-product-img' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                    <h3>Beetle T-shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                    
+                </div>
+                <div class='new-product' onclick=popupFunc(event)>
+                    <img class='new-product-img' src="./img/tshirt_beetle.png" id='prd-img' alt="image">
+                    <h3>Beetle T-shirt</h3>
+                    <p>300,000</p>
+                    <div class='overlay'>
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <h2>Miu Seu Collection</h2>
+        <section class='art-collection'>
+            <div class='collection-preview'>
+                <img class='collection-preview-img' src='./img/crop_cats.png' alt='image' />
+            </div>
+            <div class='collection-products'></div>
+        </section>
+
+        <hr>
+        <h2>Miu Seu Collection</h2>
+        <section class='art-collection'>
+            <div class='collection-preview'>
+                <img class='collection-preview-img' src='./img/crop_woman.png' alt='image' />
+            </div>
+            <div class='collection-products'></div>
+        </section>
+
+        <!-- END OF COLLECTIONS -->
 
         <div class='mission-statement-container'>
             <h1>Our Mission</h1>
@@ -172,6 +243,13 @@
             arrows: false
         });
 	
+        $('.autoplay-popup').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false
+        });
     </script>
 </body>
 </html>
